@@ -1,0 +1,16 @@
+
+server:
+  port: 8080
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/portfolio
+    username: portfolio
+    password: dev_password
+  jpa:
+    hibernate:
+      ddl-auto: validate    # never auto-modify the schema
+    show-sql: true          # logs SQL queries ? turn off in prod
+  flyway:
+    enabled: true
+    locations: classpath:db/migration
