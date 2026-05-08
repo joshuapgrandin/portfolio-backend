@@ -1,0 +1,1 @@
+ALTER TABLE projects ADD COLUMN github_url_backend VARCHAR(255);

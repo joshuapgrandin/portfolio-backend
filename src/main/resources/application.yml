@@ -1,12 +1,12 @@
 
 server:
-  port: 8080
+  port: 8081
 
 spring:
   datasource:
     url: jdbc:postgresql://localhost:5432/portfolio
-    username: portfolio
-    password: dev_password
+    username: joshua
+    password:
   jpa:
     hibernate:
       ddl-auto: validate    # never auto-modify the schema
