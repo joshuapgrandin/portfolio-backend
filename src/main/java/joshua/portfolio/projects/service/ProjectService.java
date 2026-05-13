@@ -1,6 +1,6 @@
 package joshua.portfolio.projects.service;
 
-import joshua.portfolio.exceptions.custom.ProjectNotFoundException;
+import joshua.portfolio.exceptions.custom.ResourceNotFoundException;
 import joshua.portfolio.projects.enums.ProjectStatus;
 import joshua.portfolio.projects.model.Projects;
 import joshua.portfolio.projects.repo.ProjectRepository;
@@ -26,6 +26,6 @@ public class ProjectService {
     public Projects findById(Long id)
     {
         return projectRepository.findById(id)
-                .orElseThrow(() -> new ProjectNotFoundException("Project with id " + id + " not found"));
+                .orElseThrow(() -> new ResourceNotFoundException("Project with id " + id + " not found"));
     }
 }
